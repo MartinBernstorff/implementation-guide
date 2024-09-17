@@ -5,6 +5,7 @@ Parent: Media
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-quality named quality 0..*
 * extension contains ehealth-resolved-timing named resolvedTiming 1..1
+* extension contains http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact named relatedArtifact 0..*
 * basedOn 1..1
 * basedOn only Reference(ehealth-servicerequest)
 * basedOn ^type.aggregation = #referenced
