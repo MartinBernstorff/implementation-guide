@@ -25,10 +25,17 @@
   "property": [
     {
       "code": "size",
-      "uri": "http://ehealth.sundhed.dk/cs/media-resolution/size",
+      "uri": "http://ehealth.sundhed.dk/cs/media-resolution#size",
       "description": "The size in pixels of the media representation (maximum of width or height)",
       "type": "integer"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "A numeric value that represents the item's weight in a list",
+      "type": "decimal"
     }
+
   ],
   "concept": [
     {
@@ -39,6 +46,10 @@
         {
           "code": "size",
           "valueInteger": 100
+        },
+        {
+          "code": "itemWeight",
+          "valueDecimal": 100
         }
       ]
     },
@@ -50,6 +61,10 @@
         {
           "code": "size",
           "valueInteger": 240
+        },
+        {
+          "code": "itemWeight",
+          "valueDecimal": 240
         }
       ]
     },
@@ -61,6 +76,10 @@
         {
           "code": "size",
           "valueInteger": 460
+        },
+        {
+          "code": "itemWeight",
+          "valueDecimal": 460
         }
       ]
     },
@@ -72,6 +91,10 @@
         {
           "code": "size",
           "valueInteger": 1024
+        },
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1024
         }
       ]
     },
@@ -83,6 +106,10 @@
         {
           "code": "size",
           "valueInteger": 1920
+        },
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1920
         }
       ]
     }
