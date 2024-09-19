@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-media-resolution",
+  "url": "http://ehealth.sundhed.dk/vs/media-resolution",
+  "version": "2021-10-22T13:25:25",
+  "name": "MediaResolution",
+  "title": "Media Resolution",
+  "status": "active",
+  "experimental": true,
+  "date": "2024-09-19T10:02:00+02:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Media Resolution is a value set with the available sizes of low resolution media representations.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/media-resolution"
+      }
+    ]
+  }
+}

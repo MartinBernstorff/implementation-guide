@@ -1,0 +1,90 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-media-resolution",
+  "url": "http://ehealth.sundhed.dk/cs/media-resolution",
+  "version": "0.6.0",
+  "name": "MediaResolution",
+  "title": "Media Resolution",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-09-19T10:02:00+02:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Media Resolution is a code system for the sizes of low resolution media representations.",
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "size",
+      "uri": "http://ehealth.sundhed.dk/cs/media-resolution/size",
+      "description": "The size in pixels of the media representation (maximum of width or height)",
+      "type": "integer"
+    }
+  ],
+  "concept": [
+    {
+      "code": "100p",
+      "display": "100 pixels",
+      "definition": "The media representation is 100 pixels in size (maximum of width or height)",
+      "property": [
+        {
+          "code": "size",
+          "valueInteger": 100
+        }
+      ]
+    },
+    {
+      "code": "240p",
+      "display": "240 pixels",
+      "definition": "The media representation is 240 pixels in size (maximum of width or height)",
+      "property": [
+        {
+          "code": "size",
+          "valueInteger": 240
+        }
+      ]
+    },
+    {
+      "code": "460p",
+      "display": "460 pixels",
+      "definition": "The media representation is 460 pixels in size (maximum of width or height)",
+      "property": [
+        {
+          "code": "size",
+          "valueInteger": 460
+        }
+      ]
+    },
+    {
+      "code": "1024p",
+      "display": "1024 pixels",
+      "definition": "The media representation is 1024 pixels in size (maximum of width or height)",
+      "property": [
+        {
+          "code": "size",
+          "valueInteger": 1024
+        }
+      ]
+    },
+    {
+      "code": "1920p",
+      "display": "1920 pixels",
+      "definition": "The media representation is 1920 pixels in size (maximum of width or height)",
+      "property": [
+        {
+          "code": "size",
+          "valueInteger": 1920
+        }
+      ]
+    }
+  ]
+}
