@@ -41,4 +41,4 @@ Parent: Observation
 * component[woundVolume].code.coding from http://loinc.org
 * component[woundVolume].code.coding.code = #94083-3 (exactly) // Wound volume
 * component[woundVolume].value[x] only Quantity
-* component[].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
+* dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
