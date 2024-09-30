@@ -22,18 +22,23 @@ Parent: Observation
 * referenceRange.type from http://ehealth.sundhed.dk/vs/reference-range-type
 // not in r4: * related.target only Reference(ehealth-observation or ehealth-questionnaireresponse or Sequence)
 * component 0..5
-* component[0].code = http://loinc.org#39125-0 // Width of Wound
-* component[=].value[x] only Quantity
-* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
-* component[+].code = http://loinc.org#39126-8 // Length of Wound
-* component[=].value[x] only Quantity
-* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
-* component[+].code = http://loinc.org#39127-6 // Depth of Wound
-* component[=].value[x] only Quantity
-* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
-* component[+].code = http://loinc.org#89260-4 // Area of Wound
-* component[=].value[x] only Quantity
-* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
-* component[+].code = http://loinc.org#94083-3 // Wound volume
-* component[=].value[x] only Quantity
-* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "coding.code"
+* component ^slicing.rules = #open
+* component contains woundWidth 0..1 and woundWidth 0..1 and woundDepth 0..1 and woundArea 0..1 and woundVolume 0..1
+* component[woundWidth].coding.system from http://loinc.org
+* component[woundWidth].coding.code = #39125-0 (exactly) // Width of Wound
+* component[woundWidth].value[x] only Quantity
+* component[woundLength].coding.system from http://loinc.org
+* component[woundLength].coding.code = #39126-8 (exactly) // Length of Wound
+* component[woundLength].value[x] only Quantity
+* component[woundDepth].coding.system from http://loinc.org
+* component[woundDepth].coding.code = #39127-6 (exactly) // Depth of Wound
+* component[woundDepth].value[x] only Quantity
+* component[woundArea].coding.system from http://loinc.org
+* component[woundArea].coding.code = #89260-4 (exactly) // Area of Wound
+* component[woundArea].value[x] only Quantity
+* component[woundVolume].coding.system from http://loinc.org
+* component[woundVolume].coding.code = #94083-3 (exactly) // Wound volume
+* component[woundVolume].value[x] only Quantity
+* component[].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
