@@ -22,6 +22,18 @@ Parent: Observation
 * referenceRange.type from http://ehealth.sundhed.dk/vs/reference-range-type
 // not in r4: * related.target only Reference(ehealth-observation or ehealth-questionnaireresponse or Sequence)
 * component 0..5
-* component[+].code = http://loinc.org#39125-0 // Width of Wound
-* component[+].value[x] only Quantity
-* component[+].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
+* component[0].code = http://loinc.org#39125-0 // Width of Wound
+* component[=].value[x] only Quantity
+* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
+* component[+].code = http://loinc.org#39126-8 // Length of Wound
+* component[=].value[x] only Quantity
+* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
+* component[+].code = http://loinc.org#39127-6 // Depth of Wound
+* component[=].value[x] only Quantity
+* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
+* component[+].code = http://loinc.org#89260-4 // Area of Wound
+* component[=].value[x] only Quantity
+* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
+* component[+].code = http://loinc.org#94083-3 // Wound volume
+* component[=].value[x] only Quantity
+* component[=].dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
